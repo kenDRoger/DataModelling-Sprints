@@ -466,7 +466,6 @@ h1 {
   display: grid;
   gap: 7px;
   min-width: 0;
-  aspect-ratio: 16 / 10;
   align-content: start;
   padding: 12px;
   border: 1px solid var(--nord3);
@@ -502,6 +501,107 @@ h1 {
   margin: 8px 0 0;
   color: var(--nord5);
   font-size: 10px;
+}
+
+.readout {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+  padding: 10px 12px 12px;
+  border: 1px solid var(--nord3);
+  background: var(--nord0);
+}
+
+.readout__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px 12px;
+}
+
+.readout__title {
+  margin: 0;
+  color: var(--nord8);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.readout__open,
+.drive-link {
+  color: var(--nord8);
+  font-size: 11px;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.readout__open:hover,
+.readout__open:focus-visible,
+.drive-link:hover,
+.drive-link:focus-visible {
+  border-bottom-color: var(--nord8);
+}
+
+.readout__preview summary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px 12px;
+  cursor: pointer;
+  color: var(--nord4);
+  font-size: 11px;
+}
+
+.readout__preview summary::marker {
+  color: var(--nord8);
+}
+
+.readout__hint {
+  color: var(--nord5);
+  font-size: 10px;
+}
+
+.readout__preview iframe {
+  display: block;
+  width: 100%;
+  height: 320px;
+  margin-top: 8px;
+  border: 1px solid var(--nord2);
+  background: var(--nord1);
+}
+
+.readout__fallback {
+  margin: 6px 0 0;
+  color: var(--nord5);
+  font-size: 10px;
+}
+
+.readout__fallback a {
+  color: var(--nord8);
+}
+
+.drive-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  align-self: start;
+  padding: 6px 9px;
+  border: 1px solid var(--nord3);
+  color: var(--nord5);
+  font-size: 11px;
+}
+
+.drive-link::before {
+  content: "\2197";
+  color: var(--nord8);
+}
+
+.drive-link:hover,
+.drive-link:focus-visible {
+  border-color: var(--nord8);
+  background: var(--nord1);
+  color: var(--nord6);
 }
 
 .project-card__finding {
@@ -808,6 +908,7 @@ h1 {
 @media (max-width: 767px) {
   html { scroll-padding-top: 150px; }
   .figure-grid { grid-template-columns: minmax(0, 1fr); }
+  .readout__preview iframe { height: 260px; }
   .topbar { align-items: flex-start; flex-direction: column; }
   .terminal-nav { justify-content: flex-start; width: 100%; }
   .site-grid { grid-template-columns: minmax(0, 1fr); gap: 9px; padding: 10px 10px 22px; }

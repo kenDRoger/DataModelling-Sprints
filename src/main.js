@@ -34,11 +34,21 @@ const renderProject = (project) => `
     <h3>${escapeHtml(project.title)}</h3>
     <p class="project-card__summary">${escapeHtml(project.summary)}</p>
     <div class="project-preview" role="group" aria-label="Text summary of ${escapeHtml(project.id)} model output">
-      <div class="project-preview__top"><span>EIF / ${escapeHtml(project.id)}</span><span>MODEL SNAPSHOT</span></div>
+      <div class="project-preview__top"><span>EIF / ${escapeHtml(project.id)}</span><span>${escapeHtml(project.previewLabel.toUpperCase())}</span></div>
       ${project.previewLines.map(([label, value]) => `
         <div class="project-preview__row"><span>${escapeHtml(label)}</span><strong>${escapeHtml(value)}</strong></div>
       `).join("")}
-      <p class="project-preview__note">No project screenshot supplied; showing verified model counts instead.</p>
+    </div>
+    <div class="readout">
+      <div class="readout__head">
+        <p class="readout__title">Deliverable 3b readout</p>
+        <a class="readout__open" href="${escapeHtml(import.meta.env.BASE_URL)}${escapeHtml(project.readout)}" target="_blank" rel="noopener">Open PDF</a>
+      </div>
+      <details class="readout__preview">
+        <summary><span>Preview readout</span><span class="readout__hint">scroll and zoom inside</span></summary>
+        <iframe src="${escapeHtml(import.meta.env.BASE_URL)}${escapeHtml(project.readout)}#view=FitH" title="Deliverable 3b readout for ${escapeHtml(project.id)}" loading="lazy"></iframe>
+        <p class="readout__fallback">If the preview does not load, open the PDF: <a href="${escapeHtml(import.meta.env.BASE_URL)}${escapeHtml(project.readout)}" target="_blank" rel="noopener">${escapeHtml(project.id)} readout</a></p>
+      </details>
     </div>
     <p class="project-card__finding"><span class="label">[DERIVED]</span> ${escapeHtml(project.finding)}</p>
     <div class="tag-list" aria-label="Skills demonstrated">
@@ -47,6 +57,7 @@ const renderProject = (project) => `
     <ul class="deliverable-list" aria-label="EIF deliverables">
       ${project.evidence.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
     </ul>
+    <a class="drive-link" href="${escapeHtml(project.driveUrl)}" target="_blank" rel="noopener">Google Drive folder · ${escapeHtml(project.sprint)}</a>
     <details class="model-note">
       <summary>Model limits</summary>
       <p>${escapeHtml(project.limitation)}</p>
