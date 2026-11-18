@@ -1,0 +1,6 @@
+store_id,store_name,region,demand_index
+S001,North Market,North,0.82
+S002,Riverside Market,East,0.94
+S003,Central Market,Central,1.0
+S004,Hilltop Market,West,1.13
+S005,South Market,South,1.25

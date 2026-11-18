@@ -1,0 +1,6 @@
+product_id,product_name,category,base_price,base_daily_demand
+P001,Apples,Produce,2.49,18
+P002,Milk,Dairy,3.29,15
+P003,Coffee,Beverages,8.99,9
+P004,Chips,Snacks,3.79,12
+P005,Laundry Detergent,Household,10.99,5

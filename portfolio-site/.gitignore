@@ -1,0 +1,19 @@
+# Whitelist the site source and manual Pages configuration only.
+*
+
+!.gitignore
+!README.md
+!index.html
+!package.json
+!package-lock.json
+!vite.config.js
+
+!public/
+!public/**
+
+!src/
+!src/**
+
+!.github/
+!.github/workflows/
+!.github/workflows/**

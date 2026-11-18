@@ -1,0 +1,17 @@
+rider_id,experience_months,vehicle_type,daily_capacity
+R-001,31,bicycle,10
+R-002,34,scooter,12
+R-003,11,bicycle,10
+R-004,46,bicycle,12
+R-005,27,bicycle,12
+R-006,39,van,10
+R-007,6,scooter,10
+R-008,28,van,10
+R-009,12,bicycle,14
+R-010,44,bicycle,10
+R-011,46,scooter,10
+R-012,33,scooter,10
+R-013,28,bicycle,14
+R-014,44,scooter,10
+R-015,25,van,14
+R-016,2,scooter,10

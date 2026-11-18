@@ -1,4 +1,4 @@
-name: Publish EIF Fellowship portfolio
+name: Publish portfolio site
 
 on:
   workflow_dispatch:
@@ -24,17 +24,19 @@ jobs:
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: package-lock.json
+          cache-dependency-path: portfolio-site/package-lock.json
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Install dependencies
+        working-directory: portfolio-site
         run: npm ci
       - name: Build static site
+        working-directory: portfolio-site
         run: npm run build
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: dist
+          path: portfolio-site/dist
 
   deploy:
     environment:

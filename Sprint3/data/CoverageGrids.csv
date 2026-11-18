@@ -1,0 +1,13 @@
+coverage_grid_id,cell_site_id,region_id,region_name,market_type,coverage_area_sq_km,population_covered
+GRID-001,SITE-001,R01,Metro North,urban,4.35,11589
+GRID-002,SITE-002,R01,Metro North,urban,4.7,8201
+GRID-003,SITE-003,R02,Metro South,urban,5.05,5569
+GRID-004,SITE-004,R02,Metro South,urban,5.4,5711
+GRID-005,SITE-005,R03,Lake District,suburban,5.75,9400
+GRID-006,SITE-006,R03,Lake District,suburban,6.1,6778
+GRID-007,SITE-007,R04,Coastal Belt,suburban,6.45,7724
+GRID-008,SITE-008,R04,Coastal Belt,suburban,6.8,5622
+GRID-009,SITE-009,R05,Highland Route,rural,7.15,8192
+GRID-010,SITE-010,R05,Highland Route,rural,7.5,5943
+GRID-011,SITE-011,R06,River Corridor,rural,7.85,11828
+GRID-012,SITE-012,R06,River Corridor,rural,8.2,11736

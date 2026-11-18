@@ -1,0 +1,13 @@
+cell_site_id,region_id,site_name,market_type,capacity_gbps,annual_demand_growth,gross_margin
+SITE-001,R01,Metro North site 1,urban,3.2,0.085,0.68
+SITE-002,R01,Metro North site 2,urban,3.4149341716614425,0.085,0.68
+SITE-003,R02,Metro South site 1,urban,4.316162232366534,0.075,0.67
+SITE-004,R02,Metro South site 2,urban,4.499198530942348,0.075,0.67
+SITE-005,R03,Lake District site 1,suburban,4.311031713727875,0.065,0.66
+SITE-006,R03,Lake District site 2,suburban,3.047440905850041,0.065,0.66
+SITE-007,R04,Coastal Belt site 1,suburban,4.560063830884756,0.072,0.65
+SITE-008,R04,Coastal Belt site 2,suburban,3.0384411367225472,0.072,0.65
+SITE-009,R05,Highland Route site 1,rural,4.190196796929169,0.048,0.63
+SITE-010,R05,Highland Route site 2,rural,3.363345904122516,0.048,0.63
+SITE-011,R06,River Corridor site 1,rural,3.14396023329745,0.055,0.64
+SITE-012,R06,River Corridor site 2,rural,2.483834220909906,0.055,0.64

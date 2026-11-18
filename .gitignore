@@ -1,19 +1,46 @@
-# Whitelist the site source and manual Pages configuration only.
+# Whitelist project deliverables only.
 *
 
 !.gitignore
-!README.md
-!index.html
-!package.json
-!package-lock.json
-!vite.config.js
 
-!public/
-!public/**
-
-!src/
-!src/**
+!portfolio-site/
+!portfolio-site/**
+!portfolio-site/node_modules/
+portfolio-site/node_modules/
+!portfolio-site/dist/
+portfolio-site/dist/
 
 !.github/
 !.github/workflows/
 !.github/workflows/**
+
+!Sprint1/
+!Sprint1/**
+
+!Sprint2/
+!Sprint2/**
+
+!Sprint3/
+!Sprint3/**
+
+
+!reference_data/
+!reference_data/**
+
+# Always ignore generated or local files, including inside whitelisted folders.
+legacy/
+**/__pycache__/
+**/*.py[cod]
+**/*.pyo
+**/.ipynb_checkpoints/
+**/.DS_Store
+**/Thumbs.db
+**/*.swp
+**/*.swo
+**/*.log
+**/*.tmp
+
+
+
+!.gitattributes
+!README.md
