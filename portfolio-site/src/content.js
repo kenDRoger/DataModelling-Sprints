@@ -75,7 +75,7 @@ export const portfolio = {
         "A fictional five-store, five-product daily panel. The analysis compares weekday patterns, promotions, stockouts, and a simple chronological baseline.",
       previewLabel: "model snapshot",
       driveUrl: "https://drive.google.com/drive/folders/1VJ0oZ2LZFP887Sfwb_4rW6t0Q_2KkXz9?usp=sharing",
-      readout: "readouts/sd004-readout.pdf",
+      readout: "readouts/sd004-readout.pdf?v=4",
       previewLines: [
         ["core tables", "5 + calendar"],
         ["daily observations", "3,000"],
@@ -97,7 +97,7 @@ export const portfolio = {
         "A fictional order-to-delivery operation connecting orders, deliveries, riders, routes, and event records.",
       previewLabel: "model snapshot",
       driveUrl: "https://drive.google.com/drive/folders/1h3WPk2-4Wi4OEXYcJCKHZVuUH0c7143N?usp=sharing",
-      readout: "readouts/sd029-readout.pdf?v=3",
+      readout: "readouts/sd029-readout.pdf?v=4",
       previewLines: [
         ["orders", "480"],
         ["routes / riders", "48 / 16"],
@@ -119,7 +119,7 @@ export const portfolio = {
         "A fictional network-planning model that compares site-upgrade options across conservative, base, and growth budget scenarios.",
       previewLabel: "base scenario",
       driveUrl: "https://drive.google.com/drive/folders/1BNU7vff0jjhY6yz5VCFxygulto6blnbO?usp=sharing",
-      readout: "readouts/sd210-readout.pdf",
+      readout: "readouts/sd210-readout.pdf?v=4",
       previewLines: [
         ["synthetic sites", "12"],
         ["required tables", "7"],
