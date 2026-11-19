@@ -181,7 +181,6 @@ app.innerHTML = `
       <div class="panel__body">
         <div class="section-heading">
           <h2 class="section-title" id="projects-title">Three synthetic models. Three operational questions.</h2>
-          <p>Every result below describes the generated teaching data, not a real business or network.</p>
         </div>
         <div class="project-grid">${portfolio.projects.map(renderProject).join("")}</div>
       </div>
@@ -192,7 +191,6 @@ app.innerHTML = `
       <div class="panel__body">
         <div class="section-heading">
           <h2 class="section-title" id="figures-title">Charts from the executed notebooks</h2>
-          <p>Images are the saved Matplotlib outputs of each Deliverable 3a notebook, read directly from the notebook files.</p>
         </div>
         <div class="figure-grid">${portfolio.figures.map(renderFigure).join("")}</div>
       </div>
