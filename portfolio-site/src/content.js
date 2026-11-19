@@ -97,7 +97,7 @@ export const portfolio = {
         "A fictional order-to-delivery operation connecting orders, deliveries, riders, routes, and event records.",
       previewLabel: "model snapshot",
       driveUrl: "https://drive.google.com/drive/folders/1h3WPk2-4Wi4OEXYcJCKHZVuUH0c7143N?usp=sharing",
-      readout: "readouts/sd029-readout.pdf?v=2",
+      readout: "readouts/sd029-readout.pdf?v=3",
       previewLines: [
         ["orders", "480"],
         ["routes / riders", "48 / 16"],
